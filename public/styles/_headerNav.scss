@@ -1,0 +1,28 @@
+// body {
+//     background-color: #fffb00;
+// }
+
+.headerNavbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    padding: 0 62px;
+
+    .logo {
+        text-decoration: none;
+        color: #63b7a5;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .navLinks {
+        color: #63b7a5;
+        
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
