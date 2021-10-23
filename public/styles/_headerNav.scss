@@ -4,25 +4,49 @@
 
 .headerNavbar {
     background-color: rgb(255, 255, 255);
+    box-shadow: $boxShadow;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 78px;
-    padding: 0 62px;
+    height: 4.875rem;
+    padding: 0 3.875rem;
 
     .logo {
         text-decoration: none;
-        color: #63b7a5;
-        font-size: 25px;
+        display: flex;
+        align-items: center;
+        font-family: $secondaryFont;
+        color: $primaryColor;
+        font-size: 1.625rem;
         font-weight: bold;
+
+        img {
+            color: $primaryColor;
+            margin-left: 5px;
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .navLinks {
-        color: #63b7a5;
-        
+        color: $primaryColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+
 
         a {
+            font-weight: bold;
+            font-family: $secondaryFont;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            color: $primaryColor;
             text-decoration: none;
+        }
+
+        .horizLine {
+            font-size: 1rem;
         }
     }
 }

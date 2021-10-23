@@ -1,6 +1,15 @@
+@import 'variable';
 @import 'headerNav';
+@import 'SignUp';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
+    position: relative;
     background-color: #F8F8F8;
 }
 
