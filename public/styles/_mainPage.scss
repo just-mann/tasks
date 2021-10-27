@@ -1,0 +1,34 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    .leftSide {
+        background-color: $white;
+        box-shadow: $boxShadow;
+
+        .section1 {
+            .logo {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-family: $secondaryFont;
+                color: $primaryColor;
+                font-size: 1.625rem;
+                font-weight: bold;
+        
+                img {
+                    color: $primaryColor;
+                    margin-left: 5px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+
+    .createList {
+        // background-color: aqua;
+    }
+}

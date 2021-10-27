@@ -14,6 +14,7 @@
   height: 4.875rem;
   padding: 0 3.875rem;
 }
+
 .headerNavbar .logo {
   text-decoration: none;
   display: -webkit-box;
@@ -27,12 +28,14 @@
   font-size: 1.625rem;
   font-weight: bold;
 }
+
 .headerNavbar .logo img {
   color: #63b7a5;
   margin-left: 5px;
   width: 30px;
   height: 30px;
 }
+
 .headerNavbar .navLinks {
   color: #63b7a5;
   display: -webkit-box;
@@ -46,6 +49,7 @@
           align-items: center;
   width: 150px;
 }
+
 .headerNavbar .navLinks a {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
@@ -54,6 +58,7 @@
   color: #63b7a5;
   text-decoration: none;
 }
+
 .headerNavbar .navLinks .horizLine {
   font-size: 1rem;
 }
@@ -73,29 +78,197 @@
   -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   z-index: 100;
+  display: none;
+  -webkit-transition: display 0.3s ease-in;
+  transition: display 0.3s ease-in;
 }
+
 .signUp .signupHeading {
   font-size: 22px;
+  font-weight: bold;
   color: #63b7a5;
   text-align: center;
 }
+
 .signUp .inputDiv {
   width: 100%;
   border: 2px solid #E9E3E3;
   border-radius: 3px;
   margin-top: 12px;
 }
+
 .signUp .inputDiv input {
   width: 100%;
   border: none;
   outline: none;
-  padding: 5px 10px;
+  font-size: 13px;
+  padding: 7px 10px;
 }
+
+.signUp .inputDiv input::-webkit-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.signUp .inputDiv input:-ms-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.signUp .inputDiv input::-ms-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.signUp .inputDiv input::placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
 .signUp .entPasswordDiv, .signUp .re-passwordDiv {
   margin-top: 12px;
 }
+
 .signUp .submitBtnDiv {
   margin-top: 25px;
+}
+
+.signUp .submitBtnDiv .submitBtn {
+  border: 2px solid #63b7a5;
+  background-color: #63b7a5;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.signUp .submitBtnDiv .submitBtn:hover {
+  opacity: 0.8;
+}
+
+.Login {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ffffff;
+  border: 1px solid #E9E3E3;
+  width: 320px;
+  height: 310px;
+  padding: 20px 30px;
+  margin: 50px auto 0 auto;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  display: none;
+  -webkit-transition: display 0.3s ease-in;
+  transition: display 0.3s ease-in;
+}
+
+.Login .loginHeading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #63b7a5;
+  text-align: center;
+}
+
+.Login .inputDiv {
+  width: 100%;
+  border: 2px solid #E9E3E3;
+  border-radius: 3px;
+  margin-top: 35px;
+}
+
+.Login .inputDiv input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 7px 10px;
+}
+
+.Login .inputDiv input::-webkit-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.Login .inputDiv input:-ms-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.Login .inputDiv input::-ms-input-placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.Login .inputDiv input::placeholder {
+  color: #9E9797;
+  font-size: 13px;
+}
+
+.Login .entPasswordDiv, .Login .re-passwordDiv {
+  margin-top: 12px;
+}
+
+.Login .submitBtnDiv {
+  margin-top: 25px;
+}
+
+.Login .submitBtnDiv .submitBtn {
+  border: 2px solid #63b7a5;
+  background-color: #63b7a5;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.Login .submitBtnDiv .submitBtn:hover {
+  opacity: 0.8;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+.mainContainer .leftSide {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.mainContainer .leftSide .section1 .logo {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #63b7a5;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+
+.mainContainer .leftSide .section1 .logo img {
+  color: #63b7a5;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 * {
@@ -113,3 +286,4 @@ body {
 a {
   text-decoration: none;
 }
+/*# sourceMappingURL=styles.css.map */

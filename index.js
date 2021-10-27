@@ -26,6 +26,12 @@ app.get('/', (req, res) => {
 });
 
 
+// Load Tasks or Lists Page
+app.get('/createList', (req, res) => {
+    res.render('MainPage.ejs');
+})
+
+
 
 
 app.listen(PORT, () => {
